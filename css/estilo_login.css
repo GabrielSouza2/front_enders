@@ -8,8 +8,8 @@ form{
 	box-shadow: 0px 0px 10px 0px; /***sombra da caixa **/
 }
 .bg{ 
-	width: 60px;  /**imagem do logo /**/
-	height: 60px;
+	width: 120px;  /**imagem do logo /**/
+	height: 120px;
 	position: absolute;
 	top:-35px;
 	left: 40%;
