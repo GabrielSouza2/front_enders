@@ -10,14 +10,21 @@
 
    <div>
     <h1> Redefinição de senha</h1>
+    
     <div>
         <label for="nome"> Username</label>
-        <input type="text" id="username" name="username">
+        <input type="text" id="username" name="username"> 
     </div>
 
+    <!-- Inserir senha-->
     <div>
-        <label for="pass"> Senha (mínimo 8 carácteres):</label>
+        <label for="pass"> Insira a nova senha (mínimo 8 carácteres):</label>
         <input type="passowrd" id="pass" name="password" minlength="8" required>
+    </div>
+    <!-- repetir senha-->
+    <div>
+        <label for="pass"> Repita a nova senha:</label>
+        <input type="password" id="pass" name="password" minlength="8" required>
     </div>
     <input type="submit" value="Sign in">
    </div>
