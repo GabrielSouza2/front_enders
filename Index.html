@@ -6,6 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- FONTES (TIPOGRAFIA) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- LINKS CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -14,11 +22,12 @@
 </head>
 
 <body>
+
 <!-- BARRA DE NAVEGAÇÃO -->
-<nav class="navbar col-12 position-fixed navbar-expand-lg navbar-dark bg-dark" style="z-index: 999;">
-  <div class="container-fluid col-11 m-auto">
+<nav class="navbar col-12 navbar-expand-lg navbar-dark bg-dark" style="z-index: 999;">
+  <div class="container-fluid col-11 m-auto" style="font-family: Montserrat;">
   <a class="navbar-brand" href=""></a>
-  <img src="Imagem/Design sem nome.svg" alt="logo">
+  <img src="Imagem/Teste logo.svg" alt="logo">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -41,17 +50,18 @@
   </div>
 </div>
 </nav>
+
 <!-- CORROSSEL -->
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="Imagem/Primeiro.svg" alt="Primeiro Slide">
+      <img class="d-block w-100" src="Imagem/Primeiro slide.svg" alt="Primeiro Slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="Imagem/Segundo.svg" alt="Segundo Slide">
+      <img class="d-block w-100" src="Imagem/Segundo slide.svg" alt="Segundo Slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="Imagem/Terceiro.svg" alt="Terceiro Slide">
+      <img class="d-block w-100" src="Imagem/Terceiro slide.svg" alt="Terceiro Slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -64,8 +74,74 @@
   </a>
 </div>
 
-    <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+<!-- CHAMADA PARA AÇÃO -->
+<section class="container-pai">
+  <img src="Imagem/Imagem-login.png" alt="...">
+  <div class="container-text">
+      <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus animi voluptatum perferendis ullam laboriosam suscipit earum architecto quasi, doloremque in ipsum nihil. Incidunt rem quaerat inventore saepe repellendus adipisci natus.
+      </h4>
+      <a href="html/cadastro.html"><button class="butao-lista">Entrar na lista de espera</button></a>
+  </div>
+</section>
+
+<!-- CARDS COM OS PLANOS -->
+<div class="card col-12 col-md-6 col-lg-4 mx-auto shadow p-3 mb-5 bg-white rounded" style="width: 38rem;">
+  <img class="card-img-top" src="Imagem/Card.svg" alt="Imagem de capa do card">
+  <center>
+  <div class="card-body">
+    <h5 class="card-title font-weight-bold" style="font-family: Montserrat;">TÁ COM DÚVIDA?</h5>
+    <p class="card-text" style="font-family: Montserrat;">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+    <a href="html/produto.html" class="btn btn-light  font-weight-bold" style="font-family: Montserrat; background: #00FF57;">30 dias grátis</a>
+  </center>
+  </div>
+</div>
+
+<br>
+<br>
+
+<!-- FOOTER -->
+<div class="container-fluid bg-dark text-white p-3" style="font-family: Montserrat;">
+  <div class="row justify-content-around text-center text-md-start">
+    <div class="col-md-2 text-center">
+      <h1 class="fw-bold mt-3 ">TR</h1>
+      <h4>TRILHANDO</h4>
+    </div>
+    <div class="col-md-2">
+      <ul class="list-unstyled">
+        <li class="fw-bold my-2 font-weight-bold"">Quem somos</li>
+        <li> <a href="#" class="text-decoration-none text-white">Missão</a></li>
+        <li> <a href="#" class="text-decoration-none text-white">Visão</a></li>
+        <li> <a href="#" class="text-decoration-none text-white"></a>Valores</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <ul class="list-unstyled">
+        <li class="fw-bold my-2 font-weight-bold">Sobre</li>
+        <li> <a href="#" class="text-decoration-none text-white">Trabalhe conosco</a> </li>
+        <li> <a href="#" class="text-decoration-none text-white">Carreira</a> </li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <ul class="list-unstyled">
+        <li class="fw-bold my-2 font-weight-bold">Suporte</li>
+        <li> <a href="html/contato.html" class="text-decoration-none text-white">Contato</a> </li>
+        <li> <a href="#" class="text-decoration-none text-white">Solicitações</a> </li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <li class="fw-bold my-2 list-unstyled font-weight-bold">Siga-nos</li>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-12 text-center pt-2">
+      <p>&copy; 2022 Copyright <a href="#" class="text-white">FrontEnders</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript (Opcional) -->
+<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
