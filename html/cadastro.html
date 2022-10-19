@@ -11,7 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
    
 	<!--LINK CSS-->
 	<link rel="stylesheet" href="../css/cadastro.css">
@@ -23,7 +25,7 @@
 <nav class="navbar col-12 navbar-expand-lg navbar-dark bg-dark" style="z-index: 999;">
 	<div class="container-fluid col-11 m-auto" style="font-family: Montserrat;">
 		<a class="navbar-brand" href=""></a>
-		<img src="../Imagem/Teste logo.svg" alt="logo">
+		<img src="../Imagem/4 logo preta sem fundo (1).svg" alt="logo">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -49,13 +51,45 @@
 		</div>
 	</div>
 </nav>
-<label>Digite seu CEP</label>
-<input type="number" id="cep"/>
-<button onclick="consultaEndereço()">Consultar</button>
-<div id="resultado">
-	<p>Resultado</p>
-</div>
+<main class="cadastro-main">
+	<div class="container cadastromain">
+		<div class="cadastro-info">
+			<h1 class="text-center cadastro-titulo">Faça o seu cadastro.</h1>
+			<p class="text-center cadastro-p">Preencha os campos abaixo com os seus dados verdadeiros.</p>
+		</div>
+	</div>
+</main>
 
+<section class="container">
+	<form class="needs-validation" action="#" novalidate>
+		<div class="form-layout">
+			<div class="dados">
+				
+				<small>Informações Básicas</small>
+
+				<label class="detalhe-form" for="name">Nome Completo</label>
+				<input type="text" name="nome" id="nome" class="controle-form" 
+
+
+			</div>
+		</div>
+	</form>
+</section>
+
+
+	<p class="fazerlogin text-center">Já possui uma conta? <a href="../html/login.html"class="btn btn-light  font-weight-bold" style="font-family: Montserrat; background: #00FF57;">Faça o login.</a></p>
+</section>
+<!--Botão de acessibilidade para pessoas com PCD-->
+<div vw class="enabled">
+	<div vw-access-button class="active"></div>
+	<div vw-plugin-wrapper>
+	  <div class="vw-plugin-top-wrapper"></div>
+	</div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+	new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
  <!--FOOTER-->
 <div class="container-fluid bg-dark text-white p-3" style="font-family: Montserrat;">
 	<div class="row justify-content-around text-center text-md-start">
@@ -99,9 +133,15 @@
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
 	<script src="../js/cadastro.js"></script>
   </body>
 </html>
