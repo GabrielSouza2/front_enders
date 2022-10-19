@@ -13,6 +13,19 @@ form{
 	position: absolute;
 	top:-35px;
 	left: 40%;
-	border-radius: 50%; 
-	
+	border-radius: 50%;
+}
+
+/* Estilização da mensagem de erro*/
+.input span.error {
+    display: flex;
+    
+    padding: 0;
+
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.input span.error.active {
+    border: 1px solid red;
+    padding: 0.4em;
 }
