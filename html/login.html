@@ -16,7 +16,7 @@
 	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	
 
-    <title>Login - Trilhando</title>
+    <title>Login</title>
 </head>
 <body>
 
@@ -24,7 +24,7 @@
 <nav class="navbar col-12 navbar-expand-lg navbar-dark bg-dark" style="z-index: 999;">
 	<div class="container-fluid col-11 m-auto" style="font-family: Montserrat;">
 		<a class="navbar-brand" href=""></a>
-		<img src="../Imagem/Teste logo.svg" alt="logo">
+		<img src="../Imagem/4 logo preta sem fundo (1).svg" alt="logo">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -50,25 +50,21 @@
 		</div>
 	</div>
 </nav>
-  <br>
-  <br>
-  <br>
-<div class="container-fluid"> <!----caixa inicio-->
+<!----caixa inicio-->
+<div class="container-fluid">
 	<div class="row justify-content-center mt-5">
 		<section class="col-12 colsm-6 col-md-4">
-            <img src="../Imagem/Imagem-de-Profile1.svg" class="bg">
-			<br>
-			<br>
-			<br>
-			<br> <!---logo da pagina --->
+			<!---logo da pagina --->
 			<form class="form-container"><br>
-				<h4 class="">Login- Trilhando!</h4>
-				<div class="form-group">
-					<input type="text"  class="form-control" name="nome" placeholder="Usuario">
+				<h4 class="">Faça seu login</h4>
+				<div class="form-group input">
+					<input  required type="email" class="form-control" name="nome" placeholder="Usuario">
+					<span class="error"></span>
 				</div>
 				
-				<div class="form-group">
-					<input type="password" class="form-control" name="senha" placeholder="Senha">
+				<div class="form-group input">
+					<input required type="password" class="form-control" name="senha" placeholder="Senha">
+					<span class="error"></span>
 				</div>
 				
 				<div class="form-group form-check">
@@ -77,19 +73,15 @@
 				</div>
 			
 
-				<button class="btn btn-primary btn-block">Entrar</button>
+				<button id="login" class="btn btn-primary btn-block">Entrar</button>
 				
 				<button class="btn btn-block"> <a href="../html/senha.html">Esqueci senha</button></a>
 				
 			</form>
 		</section>
 	</div>
-</div>                      <!----caixa fim-->
-
-<br>
-<br>
-<br>
-<br>
+</div>
+<!----caixa fim-->
 <br>
 <br>
 <br>
