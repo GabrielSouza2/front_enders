@@ -7,3 +7,81 @@
 	font-family: sans-serif;
 }
 
+label {
+	display: block;
+	font-weight: 500;
+	font-size: 14px;
+	margin-bottom: 5px;
+  }
+  
+  span {
+	font-size: 12px;
+  }
+  
+  .form-control {
+	height: 40px;
+	width: 100%;
+	background-color: #ddddddc2;
+	border: 1px solid #a7a7a785;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	padding: 0px 10px;
+	font-size: 14px;
+	font-weight: 500;
+  }
+  
+  .form-control:focus {
+	outline: none;
+	border: 2px solid #1b4e2e2f;
+	background-color: #e8f0fe;
+	box-shadow: none;
+  }
+  
+  .form-control::placeholder {
+	color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .form-layout {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 60px;
+	margin-bottom: 30px;
+	padding: 0px 50px;
+  }
+  
+  .grid-form {
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	gap: 20px;
+  }
+  .cadastro-btn {
+	padding: 12px 100px;
+	border-radius: 10px;
+	font-weight: 600;
+	font-size: 14px;
+	max-width: fit-content;
+	border: 1px ;
+	background-color: #00FF57;
+	color: black;
+	display: block;
+	margin: 0 auto;
+	font-family: Montserrat;
+  }
+  small {
+	font-size: 12px;
+	padding-left: 10px;
+	position: relative;
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
+	font-weight: 500;
+  }
+  small::before {
+	content: " ";
+	width: 4px;
+	height: 10px;
+	left: 0;
+	bottom: 2px;
+	background: #00FF57;
+	position: absolute;
+  }
+	
