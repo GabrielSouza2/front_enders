@@ -11,10 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/darkmode.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Produto- trilhando!</title>
+	<!-- LINK CSS PURO -->
+	<link rel="stylesheet" href="../css/darkmode.css">
+	<link rel="stylesheet" href="../css/produtos.css">
+
+    <title>Nossos produtos</title>
 
   </head>
   <body>
@@ -25,7 +28,8 @@
 		<a class="navbar-brand" href=""></a>
 		<img src="../Imagem/4 logo preta sem fundo (1).svg" alt="logo">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-			<span class="navbar-toggler-icon"></span>
+			<span class="navbar-toggler-icon">
+			</span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto margin-left: auto">
@@ -34,43 +38,43 @@
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="../html/produto.html">Produtos</a>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="../html/contato.html">Contato</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="../html/login.html">Login</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="../html/cadastro.html">Cadastre-se</a>
-			</li>
-			<li class="nav-item">
-				<div class="theme-switch-wrapper">
-					<label class="theme-switch" for="checkbox">
-						<input type="checkbox" id="checkbox" />
-						<div class="slider round"></div>
-				
-		</ul>
-		</div>
-		<!--Botão de acessibilidade para pessoas com PCD-->
-		<div vw class="enabled">
-			<div vw-access-button class="active"></div>
-			<div vw-plugin-wrapper>
-			  <div class="vw-plugin-top-wrapper"></div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../html/contato.html">Contato</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../html/login.html">Login</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../html/cadastro.html">Cadastre-se</a>
+				</li>
+				<li class="nav-item">
+					<div class="theme-switch-wrapper">
+						<label class="theme-switch" for="checkbox">
+							<input type="checkbox" id="checkbox" />
+							<div class="slider round"></div>
+						</ul>
+					</div>
 			</div>
-<div vw class="enabled">
-<div vw-access-button class="active"></div>
-<div vw-plugin-wrapper>
-  <div class="vw-plugin-top-wrapper"></div>
-</div>
-</div>
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script>
-	</ul>
 	</div>
+<!--Botão de acessibilidade para pessoas com PCD-->
+<div vw class="enabled">
+	<div vw-access-button class="active"></div>
+	<div vw-plugin-wrapper>
+		<div class="vw-plugin-top-wrapper"></div>
+	</div>
+	<div vw class="enabled">
+		<div vw-access-button class="active"></div>
+		<div vw-plugin-wrapper>
+			<div class="vw-plugin-top-wrapper"></div>
+		</div>
+	</div>
+	<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+	<script>
+	new window.VLibras.Widget('https://vlibras.gov.br/app');
+	</script>
+	</ul>
+</div>
 </div>
 </nav>
 <script>  
@@ -81,11 +85,98 @@ $(document).ready(function(){
 	});
 });        
 </script> 
+</div>
+
+<!-- PRODUTOS -->
+<section class="card">
+	<div class="card-body">
+	  <h5 class="card-title">TRILHANDO FREE</h5>
+	  <p class="card-text">Assista nossas aulas gratuitamente! Profssionais atuantes na área e aulas atualizada semanalmente!</p>
+		<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample ">Acessar</button>
+	  </div>
+  </section>
+  
+	<div class="collapse" id="collapseExample">
+	  <div class="caixa-gif">
+		<div class="caixa-texto">
+		  <h1>Estudos</h1>
+		  <p class="texto">Nossa aluna Ana clara assistindo nossas aulas ao vivo.
+			<br>
+			- Baixe as aulas e assista de onde quiser, quando quiser.
+			<br>
+			- Tire dúvidas com profissionais do mercado.
+			<br>
+			- Saia na frente com os seus estudos!
+		  </p>
+		</div>
+		<img src="../Imagem/Gif estudos.gif" alt="estudos" style="height: 356px;">
+	  </div>
 	</div>
-</nav>
+  
+	  <div class="collapse" id="collapseExample">
+		<div class="caixa-gif">
+		  <div class="caixa-texto">
+			<h1>Aulas</h1>
+			<p class="texto">Atualizações constantes para melhorar o aprendizado e a experiência do aluno.</p>
+		  </div>
+		  <img src="../Imagem/Gif aulas.gif" alt="estudos" style="height: 356px;">
+		</div>
+	  </div>
+  
+  <section class="card">
+	<div class="card-body">
+	  <h5 class="card-title">TRILHANDO +PLUS</h5>
+		<p class="card-text">Aqui você terá acesso ao sistema MAIS PODEROSO de ensino voltado para programação!
+		</p>
+		<a href="../html/cadastro.html" class="btn btn-primary">Comprar</a>
+	  </div>
+  </section>
+  
+  <!-- FOOTER -->
+  <div class="container-fluid bg-dark text-white p-3" style="font-family: Montserrat;">
+	<div class="row justify-content-around text-center text-md-start">
+	  <div class="col-md-2 text-center">
+		<h1 class="fw-bold mt-3 ">TR</h1>
+		<h4>TRILHANDO</h4>
+	  </div>
+	  <div class="col-md-2">
+		<ul class="list-unstyled">
+		  <li class="fw-bold my-2 font-weight-bold"">Quem somos</li>
+		  <li> <a href="#" class="text-decoration-none text-white">Missão</a></li>
+		  <li> <a href="#" class="text-decoration-none text-white">Visão</a></li>
+		  <li> <a href="#" class="text-decoration-none text-white">Valores</a></li>
+		</ul>
+	  </div>
+	  <div class="col-md-2">
+		<ul class="list-unstyled">
+		  <li class="fw-bold my-2 font-weight-bold">Sobre</li>
+		  <li> <a href="#" class="text-decoration-none text-white">Trabalhe conosco</a> </li>
+		  <li> <a href="#" class="text-decoration-none text-white">Carreira</a> </li>
+		</ul>
+	  </div>
+	  <div class="col-md-2">
+		<ul class="list-unstyled">
+		  <li class="fw-bold my-2 font-weight-bold">Suporte</li>
+		  <li> <a href="html/contato.html" class="text-decoration-none text-white">Contato</a> </li>
+		  <li> <a href="#" class="text-decoration-none text-white">Solicitações</a> </li>
+		</ul>
+	  </div>
+	  <div class="col-md-2">
+		<li class="fw-bold my-2 list-unstyled font-weight-bold">Siga-nos</li>
+	  </div>
+	</div>
+	<hr>
+	<div class="row">
+	  <div class="col-md-12 text-center pt-2">
+		<p>&copy; 2022 Copyright <a href="#" class="text-white">FrontEnders</a></p>
+	  </div>
+	</div>
+  </div>
+  
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
    <script src="../js/Darkmode.js"></script>

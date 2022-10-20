@@ -1,0 +1,92 @@
+/*  -------------SECTIONS------------- */
+
+.card {
+
+    border: none;
+  }
+  
+  .card-body {
+    background-color: #f5e9e9;
+    margin: 20px 0px 20px 0px;
+    height: 200px;
+    font-family: Montserrat;
+  }
+  
+  .caixa-gif {
+    width: 50vw;
+    display: flex;
+    padding: 50px 0px 50px 50px;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+  
+  h5 {
+    font-weight: bold;
+  }
+  
+  .caixa-texto {
+    font-size: 20px;
+    margin-right: 10%;
+    font-family: Montserrat;
+  }
+  
+  
+  
+  .caixa-texto .texto {
+    width: 40vw;
+    font-size: 20px;
+  }
+  /*  -------------BOTÕES------------- */
+  .btn {
+    background-color: #0085FF;
+    border-color: #458FD3;
+    color: black;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    font-weight: bold;
+    background-color: #00FF57;
+    border: none;
+    transform: scale(1.17);
+    box-shadow: 4px 10px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /*  -------------MEDIA QUERIES SOBRE------------- */
+
+
+@media(max-width: 550px) {
+    .caixa-gif {
+      flex-direction: column;
+    }
+  
+    .caixa-texto .texto {
+      width: 70vw;
+    }
+  
+    .caixa-gif {
+      width: 90vw;
+    }
+  
+    img {
+      margin-top: 20px;
+    }
+  
+    #collapseExample {
+      width: 80%;
+    }
+  
+    .card-body {
+      height: 270px;
+    }
+
+    .btn {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
