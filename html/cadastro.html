@@ -17,11 +17,32 @@
    
 	<!--LINK CSS-->
 	<link rel="stylesheet" href="../css/cadastro.css">
+	<link rel="stylesheet" href="../css/darkmode.css">
 
     <title>Cadastro - Trilhando!</title>
   </head>
   <body>
 <!-- BARRA DE NAVEGAÇÃO -->
+<!--Botão de acessibilidade para pessoas com PCD-->
+<div vw class="enabled">
+	<div vw-access-button class="active"></div>
+	<div vw-plugin-wrapper>
+	  <div class="vw-plugin-top-wrapper"></div>
+	</div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+	new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+<script>  
+	$(document).ready(function(){
+		$('#checkbox').click(function(){
+			var element = document.body;
+			element.classList.toggle("dark"); 
+		});
+	});        
+</script> 
+
 <nav class="navbar col-12 navbar-expand-lg navbar-dark bg-dark" style="z-index: 999;">
 	<div class="container-fluid col-11 m-auto" style="font-family: Montserrat;">
 		<a class="navbar-brand" href=""></a>
@@ -46,6 +67,25 @@
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="../html/cadastro.html">Cadastre-se</a>
+			</li>
+			<li class="nav-item">
+				<div class="theme-switch-wrapper">
+					<label class="theme-switch" for="checkbox">
+						<input type="checkbox" id="checkbox" />
+						<div class="slider round"></div>
+						
+
+				<!--Botão de acessibilidade para pessoas com PCD-->
+<div vw class="enabled">
+	<div vw-access-button class="active"></div>
+	<div vw-plugin-wrapper>
+	  <div class="vw-plugin-top-wrapper"></div>
+	</div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+	new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 			</li>
 		</ul>
 		</div>
@@ -147,17 +187,7 @@
 
 	<p class="fazerlogin text-center">Já possui uma conta? <a href="../html/login.html"class="btn btn-light  font-weight-bold" style="font-family: Montserrat; background: #00FF57;">Faça o login.</a></p>
 </section>
-<!--Botão de acessibilidade para pessoas com PCD-->
-<div vw class="enabled">
-	<div vw-access-button class="active"></div>
-	<div vw-plugin-wrapper>
-	  <div class="vw-plugin-top-wrapper"></div>
-	</div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-	new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+
  <!--FOOTER-->
 <div class="container-fluid bg-dark text-white p-3" style="font-family: Montserrat;">
 	<div class="row justify-content-around text-center text-md-start">
@@ -211,5 +241,6 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
 	<script src="../js/cadastro.js"></script>
+	<script src="../js/Darkmode.js"></script>
   </body>
 </html>

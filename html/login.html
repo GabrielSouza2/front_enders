@@ -11,6 +11,7 @@
 
 
 	<link rel="stylesheet" type="text/css" href="../css/estilo_login.css"> <!----link css----->
+	<link rel="stylesheet" href="../css/darkmode.css">
 
 	 <!-- Bootstrap CSS -->
 	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -46,10 +47,41 @@
 			<li class="nav-item">
 				<a class="nav-link" href="../html/cadastro.html">Cadastre-se</a>
 			</li>
+			<li class="nav-item">
+				<div class="theme-switch-wrapper">
+					<label class="theme-switch" for="checkbox">
+						<input type="checkbox" id="checkbox" />
+						<div class="slider round"></div>
+						
+
+			<!--Botão de acessibilidade para pessoas com PCD-->
+			<div vw class="enabled">
+				<div vw-access-button class="active"></div>
+				<div vw-plugin-wrapper>
+				  <div class="vw-plugin-top-wrapper"></div>
+				</div>
+<div vw class="enabled">
+	<div vw-access-button class="active"></div>
+	<div vw-plugin-wrapper>
+	  <div class="vw-plugin-top-wrapper"></div>
+	</div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+	new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 		</ul>
 		</div>
 	</div>
 </nav>
+<script>  
+	$(document).ready(function(){
+		$('#checkbox').click(function(){
+			var element = document.body;
+			element.classList.toggle("dark"); 
+		});
+	});        
+</script> 
 <!----caixa inicio-->
 <div class="container-fluid">
 	<div class="row justify-content-center mt-5">
@@ -134,6 +166,7 @@
 
 
 <script src="../js/login.js"></script>
+<script src="../js/Darkmode.js"></script>
     
 </body>
 </html>
