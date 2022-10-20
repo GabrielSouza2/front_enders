@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="../css/darkmode.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+    <!-- CSS puro -->
+    <link rel="stylesheet" type="text/css" href="../css/estilo_login.css"> 
+
     <title>Redefinição de senha</title>
   </head>
   <body>
@@ -21,7 +24,7 @@
 <nav class="navbar col-12 navbar-expand-lg navbar-dark bg-dark" style="z-index: 999;">
   <div class="container-fluid col-11 m-auto" style="font-family: Montserrat;">
   <a class="navbar-brand" href=""></a>
-  <img src="../Imagem/Teste logo.svg" alt="logo">
+  <img src="../Imagem/4 logo preta sem fundo (1).svg" alt="logo">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -49,7 +52,7 @@
               <div class="slider round"></div>
       </li>
     </ul>
-    	<!--Botão de acessibilidade para pessoas com PCD-->
+<!--Botão de acessibilidade para pessoas com PCD-->
 <div vw class="enabled">
 	<div vw-access-button class="active"></div>
 	<div vw-plugin-wrapper>
@@ -77,18 +80,27 @@
 </div>
 </nav>
 <p></p>
+<!--Estrutura da Página e Aplicação dos Cards FIM-->
 
-<main>
-  <h1> Redefinição de senha</h1>
-      <label for="email">E-MAIL</label>
-      <input type="email" id="email">
-      <button class="btn" onclick="validar()">ENVIAR</button>
-</main>
-
-     <!----caixa fim-->
-
+<!--Recuperação de senha-->
 <br>
 <br>
+<br>
+<div class="container-fluid mt-5 mb-4">
+	<div class="row justify-content-center mt-5">
+		<section class="col-12 colsm-6 col-md-4">
+			<form class="form-container"><br>
+				<h4 class="">Recuperar senha</h4>
+				<div class="form-group input">
+					<input  required type="email" class="form-control" name="nome" placeholder="E-mail">
+					<span class="error"></span>
+				</div>
+				<button id="login" class="btn btn-primary btn-block">Recuperar</button>
+			</form>
+		</section>
+	</div>
+</div>
+
 <br>
 <br>
 <br>
