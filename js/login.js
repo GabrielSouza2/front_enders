@@ -21,3 +21,32 @@ function validarSenha(){
         senha.classList.add("is-valid");
     }
 }
+
+function redirecionar() {
+    let redirecionarBtn = document.querySelectorAll(".inputs");
+    redirecionarBtn = Array.from(redirecionarBtn);
+  
+    let valido = redirecionarBtn.every((item) =>
+      item.classList.contains("is-valid")
+    );
+  
+    const aviso = document.querySelector('h6');
+  
+    if (valido) {
+      aviso.style.color = 'green'
+      aviso.textContent = 'Login efetuado!';
+    } else {
+      aviso.textContent = '*Preencha todos os campos corretamente!';
+      aviso.style.color = 'red'
+    }
+  }
+  const botao = document.querySelector(".login");
+  
+  botao.addEventListener("click", function (event) {
+    event.preventDefault();
+    
+
+    validarEmail();
+    validarSenha();
+    redirecionar();
+});
