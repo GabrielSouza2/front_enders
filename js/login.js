@@ -36,7 +36,7 @@ function redirecionar() {
       aviso.style.color = 'green'
       aviso.textContent = 'Login efetuado!';
     } else {
-      aviso.textContent = '*Preencha todos os campos corretamente!';
+      aviso.textContent = 'Preencha todos os campos corretamente!';
       aviso.style.color = 'red'
     }
   }
