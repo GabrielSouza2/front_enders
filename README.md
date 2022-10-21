@@ -7,6 +7,7 @@
 <a href="#Fim">*Fim*</a>  
 
 <h1 id="Sobre" align="center">🤔Quem somos?🤔</h1>
+
 ![image](/Imagem/trilhando.png.jpg)
 
 <h1 id="Tec" align="center">🖥️Como o projeto foi construído?🖥️</h1>
