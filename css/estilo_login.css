@@ -1,31 +1,15 @@
-form{
-    
-    background-color: #f5f5f5; /**cor da caixa **/
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
 }
-.form-container{
-	border-radius: 10px; /***borda da caixa aredondada**/
-	padding: 30px; /***largura da caixa **/
-	box-shadow: 0px 0px 10px 0px; /***sombra da caixa **/
+.h-custom {
+height: calc(100% - 73px);
 }
-.bg{ 
-	width: 120px;  /**imagem do logo /**/
-	height: 120px;
-	position: absolute;
-	top:-35px;
-	left: 40%;
-	border-radius: 50%;
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
 }
-
-/* Estilização da mensagem de erro*/
-.input span.error {
-    display: flex;
-    
-    padding: 0;
-
-    background-color: rgba(255, 0, 0, 0.2);
-}
-
-.input span.error.active {
-    border: 1px solid red;
-    padding: 0.4em;
 }

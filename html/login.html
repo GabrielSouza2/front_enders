@@ -86,42 +86,58 @@
 		});
 	});        
 </script> 
-<!----caixa inicio-->
-<div class="container-fluid">
-	<div class="row justify-content-center mt-5">
-		<section class="col-12 colsm-6 col-md-4">
-			<!---logo da pagina --->
-			<form class="form-container"><br>
-				<h4 class="">Faça seu login</h4>
-				<div class="form-group input">
-					<input  required type="email" class="form-control" name="nome" placeholder="Usuario">
-					<span class="error"></span>
-				</div>
-				
-				<div class="form-group input">
-					<input required type="password" class="form-control" name="senha" placeholder="Senha">
-					<span class="error"></span>
-				</div>
-				
-				<div class="form-group form-check">
-					<input type="checkbox" class="form-check-input" name="">
-					<label class="form-check-label" style="color: black;">Lembre-me</label>
-				</div>
-			
 
-				<button id="login" class="btn btn-primary btn-block">Entrar</button>
-				
-				<button class="btn btn-block"> <a href="../html/senha.html">Esqueci a senha</button></a>
-				
-			</form>
-		</section>
+<br>
+<br>
+
+<section class="vh-100">
+	<div class="container-fluid h-custom">
+	  <div class="row d-flex justify-content-center align-items-center h-100">
+		<div class="col-md-9 col-lg-6 col-xl-5">
+		  <img src="../Imagem/img login.svg"
+			class="img-fluid" alt="Sample image">
+		</div>
+		<div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+		  <form class="needs-validation" action="#" novalidate>
+			<br>
+			<!-- Email input -->
+			  <input type="email" id="email" class="form-control form-control-lg form-control inputs" onkeyup="validarEmail()" required
+				placeholder="Insira seu e-mail"/>
+			  <label for="email">Usuário</label>
+  
+			<!-- Password input -->
+			  <input type="password" name="senha" id="senha" minlength="6" class="form-control form-control-lg form-control inputs"
+			  onkeyup="validarSenha()" required placeholder="Insira sua senha"/>
+			  <label for="senha">Senha</label>
+  
+			<div class="d-flex justify-content-between align-items-center">
+			  <!-- Checkbox -->
+			  <div class="form-check mb-0">
+				<input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+				<label class="form-check-label" for="form2Example3">
+				  Gravar
+				</label>
+			  </div>
+			  <a href="../html/senha.html">Esqueceu a senha?</a>
+			</div>
+  
+			<div class="text-center text-lg-start mt-4 pt-2">
+			  <button id="button" type="button" class="btn btn-primary btn-lg"
+				style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+			</div>
+  
+		  </form>
+		</div>
+	  </div>
 	</div>
-</div>
-<!----caixa fim-->
-<br>
-<br>
-<br>
-<br>
+  </section>
+  <br>
+  <br>
+  <br>
+
+
+
+  
 <!-- FOOTER -->
 <div class="container-fluid bg-dark text-white p-3" style="font-family: Montserrat;">
 	<div class="row justify-content-around text-center text-md-start">

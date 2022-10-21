@@ -11,13 +11,3 @@ function validarEmail(){
         emaiInput.classList.add("is-invalid");
     }
 }
-
-function validarSenha(){
-    if(senha.value.length < 6){
-        senha.classList.remove("is-valid");
-        senha.classList.add("is-invalid");
-    } else {
-        senha.classList.remove("is-invalid");
-        senha.classList.add("is-valid");
-    }
-}

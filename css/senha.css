@@ -1,0 +1,9 @@
+form{
+    
+    background-color: #f5f5f5; /**cor da caixa **/
+}
+.form-container{
+	border-radius: 10px; /***borda da caixa aredondada**/
+	padding: 30px; /***largura da caixa **/
+	box-shadow: 0px 0px 10px 0px; /***sombra da caixa **/
+}
