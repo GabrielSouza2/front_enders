@@ -84,4 +84,41 @@ label {
 	background: #00FF57;
 	position: absolute;
   }
-	
+
+  @media (max-width: 768px) {
+	.cadastro-titulo {
+	  font-size: 40px;
+	}
+	.cadastro-p {
+	  font-size: 16px;
+	}
+	.form-layout {
+	  grid-template-columns: 1fr;
+	  gap: 20px;
+	}
+	.grid-form {
+	  display: block;
+	}
+  }
+
+  @media (max-width: 400px) {
+	.cadastro-titulo {
+	  font-size: 30px;
+	}
+	.cadastro-p {
+	  font-size: 20px;
+	}
+	.cadastro-btn{
+		padding: 12px 70px;
+	}
+	.adress{
+		font-size: 10px;
+		display: flex;
+		margin-bottom: 20px;
+	}
+	small{
+		font-size: 10px;
+		display: flex;
+		margin-top: 30px;
+	}
+}

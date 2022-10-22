@@ -101,19 +101,18 @@
 		  <form class="needs-validation" action="#" novalidate>
 			<br>
 			<!-- Email input -->
-			  <input type="email" id="email" class="form-control inputs form-control-lg" onkeyup="validarEmail()" required
-				placeholder="Insira seu e-mail"/>
+			  <input type="email" id="email" class="inputs form-control form-control-lg" onkeyup="validarEmail()" placeholder="Insira seu e-mail"/>
 			  <label for="email">Usuário</label>
   
 			<!-- Password input -->
 			  <input type="password" id="senha" minlength="6" class="form-control form-control-lg"
-			  onkeyup="validarSenha()" required placeholder="Insira sua senha"/>
+			  onkeyup="validarSenha()" placeholder="Insira sua senha"/>
 			  <label for="senha">Senha</label>
   
 			<div class="d-flex justify-content-between align-items-center">
 			  <!-- Checkbox -->
 			  <div class="form-check mb-0">
-				<input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+				<input class="form-check-input me-2" type="checkbox" id="form2Example3" />
 				<label class="form-check-label" for="form2Example3">
 				  Gravar
 				</label>
@@ -123,7 +122,7 @@
   
 			<div class="text-center text-lg-start mt-4 pt-2">
 				<h6 class="text-center"></h6>
-			  <button id="button" type="submit" class="login inputs btn btn-primary btn-lg"
+			  <button id="button" type="button" class="login btn inputs btn-primary btn-lg"
 				style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
 			</div>
   

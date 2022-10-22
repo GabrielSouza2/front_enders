@@ -1,4 +1,5 @@
 const emaiInput = document.querySelector("#email");
+const senha = document.querySelector("#senha");
 
 function validarEmail(){
     let emailValido = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;;
@@ -23,7 +24,7 @@ function validarSenha(){
 }
 
 function redirecionar() {
-    let redirecionarBtn = document.querySelectorAll(".inputs");
+    let redirecionarBtn = document.querySelectorAll("#email, #senha");
     redirecionarBtn = Array.from(redirecionarBtn);
   
     let valido = redirecionarBtn.every((item) =>
@@ -33,11 +34,11 @@ function redirecionar() {
     const aviso = document.querySelector('h6');
   
     if (valido) {
-      aviso.style.color = 'green'
+      aviso.style.color = 'green';
       aviso.textContent = 'Login efetuado!';
     } else {
       aviso.textContent = 'Preencha todos os campos corretamente!';
-      aviso.style.color = 'red'
+      aviso.style.color = 'red';
     }
   }
   const botao = document.querySelector(".login");
