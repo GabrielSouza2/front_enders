@@ -29,6 +29,15 @@ img {
     cursor: pointer;
 }
 
+body{
+  min-height: 100vh;
+}
+
+#footer{
+  position: sticky;
+  top: 100%;
+}
+
 /*Animação botão chamada para lista*/
 .button-lista:hover {
     background-color: #00FF57;

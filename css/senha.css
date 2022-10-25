@@ -7,3 +7,17 @@ form{
 	padding: 30px; /***largura da caixa **/
 	box-shadow: 0px 0px 10px 0px; /***sombra da caixa **/
 }
+
+body{
+    min-height: 100vh;
+}
+
+#senha{
+    position: sticky;
+    top: 100%;
+}
+
+#footer{
+	margin-top: 10%;
+}
+

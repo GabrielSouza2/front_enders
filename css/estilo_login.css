@@ -13,3 +13,12 @@ height: calc(100% - 73px);
 height: 100%;
 }
 }
+
+body{
+    min-height: 100vh;
+}
+
+#footer{
+    position: sticky;
+    top: 100%;
+}

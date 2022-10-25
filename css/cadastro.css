@@ -85,6 +85,15 @@ label {
 	position: absolute;
   }
 
+body{
+    min-height: 100vh;
+}
+
+#footer{
+    position: sticky;
+    top: 100%;
+}
+
   @media (max-width: 768px) {
 	.cadastro-titulo {
 	  font-size: 40px;

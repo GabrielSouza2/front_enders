@@ -38,6 +38,15 @@
     width: 40vw;
     font-size: 20px;
   }
+
+  body{
+    min-height: 100vh;
+}
+
+#footer{
+    position: sticky;
+    top: 100%;
+}
   /*  -------------BOTÕES------------- */
   .btn {
     background-color: #0085FF;
